@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        google()  // Required to access Google services and Firebase SDKs
+        mavenCentral()
+    }
+
+    dependencies {
+        // Google services plugin
+        classpath 'com.google.gms:google-services:4.4.2'  // Ensure the Google services plugin is included
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'  // Optional if using Crashlytics
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

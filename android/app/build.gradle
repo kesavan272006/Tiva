@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        google()  // Required to access Google services and Firebase SDKs
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2'  // Google services plugin
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'  // Firebase Crashlytics plugin
+    }
+}
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.tiva"
+    compileSdkVersion 34  // Update to SDK 34
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.tiva"
+        minSdkVersion 23  // Minimum SDK version for Firebase
+        targetSdkVersion 34  // Update target SDK version to 34
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+apply plugin: 'com.google.gms.google-services'  // Apply the Google services plugin
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')  // Firebase BoM
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+}

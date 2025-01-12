@@ -1,0 +1,30 @@
+name: tiva
+description: "A friendly app"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.15.0
+  firebase_auth: ^4.7.0
+  cloud_firestore: ^4.10.0
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.3.5
+  google_sign_in: ^6.1.5  # Added for Google Sign-In
+  flutter_svg: ^1.1.6     # Optional for modern UI icons
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  intl: ^0.20.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/Images/Images_tiva/

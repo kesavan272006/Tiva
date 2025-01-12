@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "734667582724",
+    "project_id": "tiva-2f341",
+    "storage_bucket": "tiva-2f341.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734667582724:android:bd7f60071be54aa2a63451",
+        "android_client_info": {
+          "package_name": "com.example.tiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734667582724-d57pjhqm62edhsbd3vajnd15087spf8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCozwCqz2V6lt7uiQJpIwa14azEPkTkEnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734667582724-d57pjhqm62edhsbd3vajnd15087spf8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
