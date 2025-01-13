@@ -98,10 +98,10 @@ class _LoginPageState extends State<LoginPage> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFF9C27B0), // Mystic Purple
-              Color(0xFF6200EA), // Electric Purple
-              Color(0xFF304FFE), // Electric Blue
-              Color(0xFF000000), // Black (for contrast)
+              Color(0xFF9C27B0), 
+              Color(0xFF6200EA), 
+              Color(0xFF304FFE), 
+              Color(0xFF000000), 
             ],
           ),
         ),
@@ -128,25 +128,25 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 20),
                     TextField(
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                       controller: _emailController,
-                      decoration: InputDecoration(
-                        prefixIcon: const Icon(Icons.email, color: Colors.pink),
+                      decoration: const InputDecoration(
+                        prefixIcon: Icon(Icons.email, color: Colors.pink),
                         labelText: "Email",
-                        labelStyle: const TextStyle(color: Colors.white),
-                        border: const OutlineInputBorder(),
+                        labelStyle: TextStyle(color: Colors.white),
+                        border: OutlineInputBorder(),
                       ),
                     ),
                     const SizedBox(height: 10),
                     TextField(
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                       controller: _passwordController,
                       obscureText: true,
-                      decoration: InputDecoration(
-                        prefixIcon: const Icon(Icons.lock, color: Colors.pink),
+                      decoration: const InputDecoration(
+                        prefixIcon: Icon(Icons.lock, color: Colors.pink),
                         labelText: "Password",
-                        labelStyle: const TextStyle(color: Colors.white),
-                        border: const OutlineInputBorder(),
+                        labelStyle: TextStyle(color: Colors.white),
+                        border: OutlineInputBorder(),
                       ),
                     ),
                     const SizedBox(height: 20),
